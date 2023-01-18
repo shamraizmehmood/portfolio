@@ -1,59 +1,105 @@
 <!DOCTYPE html>
-<htm>
-    <head>
-        <link rel="stylesheet" href="/portfolio/css/skills.css">
-        <link rel="stylesheet" href="../css/portfolio.css">    
-        <title> Shamraiz mehmood </title>
-        <link rel="shortcut icon" type="image/jpg" href="/portfolio/favicon.ico"/>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/portfolio.css" />
+    <link rel="stylesheet" href="/css/skills.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="menuBar">
+      <div class="navbar">
+        <a href="portfolio.html">Home</a>
+        <a href="pages/skills.html">Skill</a>
+        <a href="pages/contact.html">Contact</a>
+        <a href="pages/education.html">Education</a>
+        <a href="pages/project.html">Projects</a>
+        <a href="#contact">Testimonial</a>
+      </div>
+    </header>
+    <section>
+      <div class="my-skill-heading">
+        <h1>My skills</h1>
+        <p>
+          I am currently learning to more more of frontend side. here are some
+          frontend languages that i know
+        </p>
+      </div>
+    </section>
+    <section class="my-skills">
+      <div class="main">
+        <div class="progress">
+          <div class="title">
+            <h3>html</h3>
+          </div>
+          <div class="barline">
+            <div class="countbar" data-percentNumber="90"></div>
+          </div>
+        </div>
+        <div class="progress">
+          <div class="title">
+            <h3>CSS</h3>
+          </div>
+          <div class="barline">
+            <div class="countbar" data-percentNumber="40"></div>
+          </div>
+        </div>
+        <div class="progress">
+          <div class="title">
+            <h3>JAVASCRIPT</h3>
+          </div>
+          <div class="barline">
+            <div class="countbar" data-percentNumber="65"></div>
+          </div>
+        </div>
+        <div class="progress">
+          <div class="title">
+            <h3>React</h3>
+          </div>
+          <div class="barline">
+            <div class="countbar" data-percentNumber="80"></div>
+          </div>
+        </div>
+        <div class="progress">
+          <div class="title">
+            <h3>Bootstrap</h3>
+          </div>
+          <div class="barline">
+            <div class="countbar" data-percentNumber="20"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-content">
+        <div><p>email</p></div>
+        <div><p>name</p></div>
+      </div>
+    </footer>
+    <script>
+      let numberPercent = document.querySelectorAll(".countbar");
+      let getPercent = Array.from(numberPercent);
 
-    </head>
-    <body>
-        <header class="menuBar">
-            <div class="navbar">
-                <a href="../portfolio.html">Home</a>
-                <a href="../pages/skills.html">Skill</a>
-                <a href="../pages/contact.html">Contact</a>
-                <a href="../pages/education.html">Education</a>
-                <a href="../pages/project.html">Projects</a>
-                <a href="#contact">Contact</a>
-
-              </div>
-        </header>
-        <section class="project_body">
-            <h4>Expertise <span class="space"> _______________</span></h4>
-            <div class="skills">
-                <div class="row">
-                    <div class="skill_item">
-                        <h5>html</h5>
-                        <div class="progress">
-                            <div class="progress_bar" style="width: 60%;"></div>
-                            <div class="skill_percentage">60%</div>
-                        </div>
-                    </div>
-                    <div class="skill_item">
-                        <h5>Css</h5>
-                        <div class="progress">
-                            <div class="progress_bar" style="width: 50%;"></div>
-                            <div class="skill_percentage">50%</div>
-                        </div>
-                    </div>
-                    <div class="skill_item">
-                        <h5>JavaScript</h5>
-                        <div class="progress">
-                            <div class="progress_bar" style="width: 65%;"></div>
-                            <div class="skill_percentage">65%</div>
-                        </div>
-                    </div>
-                    <div class="skill_item">
-                        <h5>React</h5>
-                        <div class="progress">
-                            <div class="progress_bar" style="width: 55%;"></div>
-                            <div class="skill_percentage">60%</div>
-                        </div>
-                    </div>
-                </div>
-            </div> 
-        </section>
-        </footer>
-    </body>
-</htm>
+      getPercent.map((items) => {
+        let startCount = 0;
+        let progressBar = () => {
+          startCount++;
+          items.innerHTML = `<h3>${startCount}%</h3>`;
+          items.style.width = `${startCount}%`;
+          if (startCount == items.dataset.percentnumber) {
+            clearInterval(stop);
+          }
+        };
+        let stop = setInterval(() => {
+          progressBar();
+        }, 25);
+      });
+    </script>
+  </body>
+</html>

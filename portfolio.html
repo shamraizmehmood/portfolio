@@ -1,59 +1,79 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="css/portfolio.css">
-        <link rel="stylesheet" href="css/index.css">
-        <title>shamraiz Mehmood</title>
-        <link rel="shortcut icon" type="image/jpg" href="favicon.ico"/>
-    </head>
-    <body>
-        <header class="menuBar">
-            <div class="navbar">
-                <a href="portfolio.html">Home</a>
-                <a href="pages/skills.html">Skill</a>
-                <a href="pages/contact.html">Contact</a>
-                <a href="pages/education.html">Education</a>
-                <a href="pages/project.html">Projects</a>
-                <a href="#contact">Contact</a>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/portfolio.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>shamraiz Mehmood</title>
+    <link rel="shortcut icon" type="image/jpg" href="favicon.ico" />
+  </head>
+  <body>
+    <header class="menuBar">
+      <div class="navbar">
+        <a href="portfolio.html">Home</a>
+        <a href="pages/skills.html">Skill</a>
+        <a href="pages/contact.html">Contact</a>
+        <a href="pages/education.html">Education</a>
+        <a href="pages/project.html">Projects</a>
+        <a href="/pages/testimonial.html">Testimonial</a>
+      </div>
+    </header>
+    <section class="container">
+      <div class="introduction">
+        <div class="p_info">
+          <h3 class="p_name">
+            Hello, My name is <span class="name">Shamraiz Mehmood</span>
+          </h3>
+          <h3 class="p_explanation">I'm <span class="chnge_text"></span></h3>
+          <p class="self-desc">
+            I'm software Enginer, web developer and student of Msc software
+            Engineering at Staffordshire University. I'm software Enginer, web
+            developer and student of Msc software Engineering at Staffordshire
+            University
+          </p>
+          <div>
+            <button
+              class="btncontact"
+              onclick="window.location.href='contact.html';"
+            >
+              Contact Me
+            </button>
+          </div>
+        </div>
+        <div class="p_picture">
+          <img src="pictures/shamraiz.jpg" alt="picture" loading="lazy" />
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-content">
+        <div><p>email</p></div>
+        <div><p>name</p></div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      var type = new Typed(".chnge_text", {
+        strings: ["web developer", "ui desing", "student"],
+        typeSpeed: 100,
+        backSpeed: 100,
+        loop: true,
+      });
+      var type = new Typed(".change_blink", {
+        strings: ["_", "_", "_"],
+        typeSpeed: 100,
+        backSpeed: 100,
+        loop: true,
+      });
 
-              </div>
-        </header>
-        <section class="container">
-            <div class="introduction">
-                <div class="p_info">
-                    <h3 class="p_name">Hello, My name is <span class="name">Shamraiz Mehmood</span></h3>
-                    <h3 class="p_explanation">I'm <span class="chnge_text"></span></h3>
-                    <P class="self-desc">I'm software Enginer, web developer and student of Msc software Engineering at Staffordshire University. I'm software Enginer, web developer and student of Msc software Engineering at Staffordshire University</P>
-                    <div>
-                        <button class="btncontact" onclick="window.location.href='contact.html';">Contact Me</button>
-                    </div>
-                </div>
-                <div class="p_picture">
-                    <img src="pictures/shamraiz.jpg" alt="picture" loading="lazy">
-                </div>
-            </div>
-        </section>
-        <footer class="footer">
-            <div class="footer-content">
-                <div><p>email</p></div>
-                <div><p>name</p></div>               
-            </div>
-
-        </footer>
-        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-        <script> 
-        var type = new Typed(".chnge_text",{
-            strings:["web developer", "ui desing","student"],
-            typeSpeed: 100,
-            backSpeed:100,
-            loop:true
-        })
-        var type = new Typed(".change_blink",{
-            strings:["_", "_","_"],
-            typeSpeed: 100,
-            backSpeed:100,
-            loop:true
-        })
-        </script>
-    </body>
+      document.querySelector(".menu-btn").addEventListener("click", abc);
+      function abc() {
+        document.querySelector(".main-menu").classList.toggle("show");
+      }
+    </script>
+  </body>
 </html>

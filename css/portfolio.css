@@ -1,40 +1,50 @@
-body{
-    background-color: black;
-    color: white;
+body {
+  background-color: black;
+  color: white;
 }
 
 .navbar {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    overflow:auto;
-    background-color: #333;
-    position:fixed ;
-    top: 0;
-    left: 0;
-    width: 100%;
-    
-  }
-  
-  .navbar a {
-     display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  .navbar a:hover {
-    text-decoration: underline black;
-    color: black;
-  }
-  
- .footer-content{
-    display: flex;
-    justify-content:space-between ;
-    margin-left: 20px;
-    margin-right: 20px;
-    font-style: italic;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
- }
- 
+  display: flex;
+  justify-content: center;
+  background-color: #ffa500;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 111;
+}
+
+.navbar a {
+  color: black;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+  font-size: 20px;
+  margin-right: 72px;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+.navbar a:hover {
+  text-decoration: underline black;
+  color: black;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-style: italic;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.footer-content p {
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: 700;
+}
+.footer {
+  width: 100%;
+  background-color: orange;
+  color: black;
+  text-align: right;
+}

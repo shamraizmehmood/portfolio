@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Arvo&family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Arvo", serif;
+}
+
+body {
+  background: black;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: left;
+  font-weight: 400;
+  color: white;
+  margin: 3rem 0 0 0;
+}
+
+h1 span {
+  font-family: "Satisfy", cursive;
+  font-size: 4rem;
+  color: orange;
+}
+
+p,
+q {
+  font-size: 1.2rem;
+}
+
+q {
+  font-weight: 500;
+  line-height: 1.5rem;
+  color: white;
+}
+
+p {
+  color: white;
+}
+
+.customer-revs {
+  margin: 100px 0;
+}
+
+.rectangle {
+  width: 40%;
+  height: 100vh;
+  background: black;
+
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+/* slideshow container */
+.slideshow-container {
+  position: relative;
+  width: 60rem;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 2rem 5rem 0 5rem;
+  text-align: center;
+}
+
+.mySlidesContainer {
+  min-height: 5rem;
+  padding: 3.5rem 2.5rem 2rem 3.5rem;
+  background: orange;
+}
+
+/* next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 55%;
+  width: auto;
+  margin-top: -1.875rem;
+  padding: 1rem;
+  color: orange;
+  font-weight: bold;
+  font-size: 3rem;
+  border-radius: 3px;
+  user-select: none;
+  transition: 0.4s;
+}
+
+/* position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px;
+}
+
+/* on hover, add a black bg color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: #000; /* fallback color */
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  text-decoration: none;
+}
+
+/* the dot/bullet/indicator container */
+.dot-container {
+  text-align: center;
+  padding: 0 1.25rem;
+}
+
+/* the dots/bullets/indicators */
+.dot {
+  height: 0.9375rem;
+  width: 0.9375rem;
+  margin: 0 2px;
+  background-color: #f6eac1;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.4s ease;
+}
+
+/* add bg color to the active dot/circle */
+.active {
+  background-color: orange;
+}

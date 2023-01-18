@@ -1,85 +1,223 @@
-.container{
-    max-width: 1100px;
-    width: 100%;
-    margin: auto;
+img {
+  width: 100%;
+}
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+.introduction {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 180px;
+  margin-bottom: 130px;
+  width: 100%;
+
+  align-items: center;
+}
+h3.p_name {
+  font-size: 30px;
+
+  margin-bottom: 0;
+}
+.p_picture > img {
+  border-radius: 20px;
+  border: 12px solid orange;
+}
+.p_picture {
+  width: 45%;
+}
+h3 span.name {
+  font-family: cursive;
+  font-weight: 700;
+  font-size: 46px;
+  color: orange;
+}
+.p_info {
+  max-width: 700px;
+  margin-right: auto;
+  width: 55%;
+  margin: 0 20px;
+}
+.self-desc {
+  margin-bottom: 40px;
+
+  font-size: 20px;
+  font-size: 600;
+  max-width: 675px;
+}
+.p_explanation {
+  margin: 0;
+  font-size: 30px;
+  display: inline-block;
+}
+.chnge_text {
+  font-size: 40px;
+  font-family: cursive;
+}
+.introduction .p_picture {
+  z-index: -1;
+  max-width: 525px;
+}
+
+.btncontact {
+  font-size: 28px;
+  font-weight: 500;
+  padding: 12px 35px;
+  color: black;
+  border-radius: 40px;
+  display: inline-block;
+  white-space: nowrap;
+  background-color: orange;
+  transition: all 0.3s ease;
+}
+.btncontact:hover {
+  transform: scale(1.02);
+  background-color: white;
+  color: orange;
+}
+.footer {
+  width: 100%;
+  background-color: orange;
+  color: black;
+  text-align: right;
+}
+.chnge_text {
+  color: orange;
+}
+
+@media (max-width: 1200px) {
+  .navbar a {
+    margin-right: 50px;
   }
-  .introduction{
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 25%;
-    margin-left: -15px;
-    margin-right: -15px;
-    position: relative;
-  }
-  h3.p_name{
-    font-size: 30px;
-    margin: 15px 0;
-  }
-  h3 span.name{
-    font-family: cursive ;
-    font-weight: 700;
+  h3.p_name {
     font-size: 28px;
-    color: orange;
-   }
-  .p_info{
-    flex: 0 0 60%;
-    max-width: 60%;
   }
-   .self-desc{
-    margin-bottom: 70px;
-    font-size: 20px;
-    font-size: 600;
+  h3 span.name {
+    font-size: 39px;
   }
-  .p_name{
-    font: 1.5em sans-serif;
+  .btncontact {
+    font-size: 24px;
+  }
+}
+@media (max-width: 1024px) {
+  h3 span.name {
+    font-size: 36px;
+  }
+  .navbar a {
+    padding: 20px 20px;
+
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 991px) {
+  .introduction {
+    margin-top: 129px;
+    margin-bottom: 62px;
+  }
+  h3.p_name {
+    font-size: 19px;
+  }
+  h3 span.name {
+    font-size: 30px;
+  }
+  .self-desc {
+    font-size: 17px;
+  }
+  .self-desc {
+    font-size: 17px;
+  }
+  .navbar a {
+    margin-right: 20px;
+  }
+  .btncontact {
+    font-size: 18px;
+  }
+  .self-desc {
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .introduction {
+    flex-direction: column-reverse;
+  }
+  .p_picture > img {
+    border-radius: 18px;
+    border: 9px solid orange;
+  }
+  .p_picture {
+    width: 100%;
+    margin-left: 11px;
+    margin-right: 35px;
+  }
+  .p_info {
+    width: 100%;
+    text-align: center;
+  }
+  .navbar a {
+    margin-right: 3px;
+  }
+  h3 span.name {
+    font-size: 36px;
+  }
+  h3.p_name {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 640px) {
+  .navbar a {
+    padding: 17px 14px;
+    font-size: 16px;
+    margin-right: 0;
+  }
+  .introduction .p_picture {
+    max-width: 456px;
+  }
+}
+@media (max-width: 540px) {
+  .introduction .p_picture {
+    max-width: 410px;
+  }
+  h3.p_name {
+    font-size: 18px;
+  }
+  h3 span.name {
+    font-size: 30px;
   }
   .p_explanation {
-    font: 1em sans-serif;
+    font-size: 24px;
   }
-  .introduction .p_picture{
-    flex: 0 0 40%;
-    max-width: 40%;
-    text-align: center;
-    position: relative;
+  .chnge_text {
+    font-size: 28px;
   }
-  .p_picture::after{
-    content: '';
-    position: absolute;
-    height: 80px;
-    width: 80px;
-    border-bottom: 10px solid orange;
-    border-right: 10px solid orange;
-    right: 20px;
-    bottom: -40px;
+  .self-desc {
+    font-size: 14px;
   }
- 
-  .introduction .p_picture img{
-height: 350px;
-border-radius: 10px;
- }
- .btncontact{
-    font-size: 16px;
-    font-weight: 500;
-    padding: 12px 35px;
-    color: white;
-    border-radius: 40px;
-    display: inline-block;
-    white-space: nowrap;
-    background-color: orange;
-    transition: all 0.3s ease;
- }
- .btncontact:hover{
-    transform: scale(1.05);
- }
- .footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: #333;
-    color: white;
-    text-align: right;
- }
- .chnge_text{
-    color: orange;
- }
+  .introduction {
+    margin-top: 106px;
+    margin-bottom: 48px;
+  }
+  .navbar a {
+    padding: 17px 14px;
+    font-size: 15px;
+  }
+}
+@media (max-width: 480px) {
+  .navbar a {
+    padding: 15px 7px;
+    font-size: 14px;
+  }
+  .introduction .p_picture {
+    max-width: 311px;
+  }
+  h3.p_name {
+    font-size: 14px;
+  }
+  .p_picture > img {
+    border-radius: 20px;
+    border: 7px solid orange;
+  }
+}
