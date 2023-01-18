@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<htm>
+    <head>
+        <link rel="stylesheet" href="pridictor.css">
+        <script src="predictor.js"></script>
+        <title>shamraiz Mehmood</title>
+        <link rel="shortcut icon" type="image/jpg" href="favicon.ico"/>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    </head>
+    <body onload="historicData()">
+      <div class = btn-top>
+        <button class="btn" onclick="updateData()"> history</button>
+        <button class="btn" onclick ="prediction() "> prediction</button>
+      </div>
+        <div id="graphContainer">
+            <canvas id="myChart"></canvas>
+            <!-- <canvas id="updatedChart"></canvas> -->
+            <select id="dropdown-year" type="number" name="year" onclick="updateData()"></select>
+        </div>
+        <div id="graphContainer2">
+          <canvas id="myChart2"></canvas>
+          <!-- <canvas id="updatedChart"></canvas> -->
+      </div>
+          
+    </body>
+</htm>

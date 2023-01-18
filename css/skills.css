@@ -1,0 +1,43 @@
+.project_body{
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.space{
+    color: orange;
+}
+.skills{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+h5{
+    line-height: 40px;
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+    text-transform: capitalize;
+    padding-bottom: 0;
+}
+.progress{
+    background-color: white;
+    height: 12px;
+    border-radius: 8px;
+    width: 100%;
+}
+.skills .skill_item .progress .progress_bar{
+ /* position: absolute; */
+    left: 0;
+    right: 0;
+    height: 100%;
+    border-radius: 4px;
+    background-color: orange;
+}
+.skill_percentage{
+/* position: absolute; */
+right: 0;
+color: white;
+/* top: -40px; */
+font-weight: 400;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<htm>
+    <head>
+        <link rel="stylesheet" href="conveter.css">
+        <script src="converter.js"></script>
+        <title>shamraiz Mehmood</title>
+        <link rel="shortcut icon" type="image/jpg" href="favicon.ico"/>
+    </head>
+    <body onload= getData()>
+        <section class="outer">
+            <div class="inner" >
+                <div id="converter-outer" >
+                    <div>
+                        <label id="yes" for="">To</label>
+                        <select id="dropdown" type="number" name="Select Currency"  onchange=getData() ></select>
+                        <label id = "dropdown_value"> value</label>
+                        <input id ="Amount" type="number" min="0.01" placeholder="Enter the Amount" value="1">
+                        <label id="yes" for="">From</label>
+                        <select id="dropdown-from" type="number" name="Select Currency" onchange=getData()></select>
+                        <label id = "dropdown_value_second"> value</label>
+                    </div>
+                    <input type="submit" name="Submit" onclick="opctfnt()">
+                </div>
+                <div id="output_display">
+                    <p>Source currency: <span id="to_value"></span></p>
+                    <p>Destination Currency:  <span id="from_value"></span></p>
+                    <p>Current Exchange Rate:<span id="display"></span></p>
+                    <p>Calculation Timestamp:<span id="Timestamp"></span></p>
+                    <p>Amount of transaction: <span id="total"></span></p>        
+                </div>
+            </div>
+    
+        </section>
+     
+    </body>
+
+</htm>

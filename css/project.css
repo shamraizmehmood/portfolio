@@ -1,0 +1,75 @@
+.project_body{
+    margin-top: 10%;
+    margin-left: 20%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.space{
+    color: orange;
+}
+.projectz_area{
+    display: flex;
+    flex-direction: row;
+    justify-content:start;
+
+}
+.container{
+    width:  250px;
+    height: 250px;
+    border-radius: 4px;
+    margin-right:10%;
+    position: relative;
+
+}
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+    transition: .5s ease;
+    background-color:#333;
+  }
+   .container:hover .overlay {
+    opacity:1;
+  }
+  .container:hover .middle {
+    opacity: 1;
+  }
+  .text {
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align:end; 
+ }
+  .middle{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+   text-align: end;
+ }
+  button{
+    justify-content: end;
+    background-color: black;
+    color: white;
+    padding: 22px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="portfolio.css">
+        <title>shamraiz Mehmood</title>
+        <link rel="shortcut icon" type="image/jpg" href="favicon.ico"/>
+    </head>
+    <body>
+        <header class="menuBar">
+            <div class="navbar">
+                <a href="portfolio.html">Home</a>
+                <a href="skills.html">Skill</a>
+                <a href="contact.html">Contact</a>
+                <a href="education.html">Education</a>
+                <a href="project.html">Projects</a>
+                <a href="#contact">Contact</a>
+
+              </div>
+        </header>
+        <section class="container">
+            <div class="introduction">
+                <div class="p_info">
+                    <h3 class="p_name">Hello, My name is <span class="name">Shamraiz Mehmood</span></h3>
+                    <h3 class="p_explanation">I'm <span class="chnge_text"></span></h3>
+                    <P class="self-desc">I'm software Enginer, web developer and student of Msc software Engineering at Staffordshire University. I'm software Enginer, web developer and student of Msc software Engineering at Staffordshire University</P>
+                    <div>
+                        <button class="btncontact" onclick="window.location.href='contact.html';">Contact Me</button>
+                    </div>
+                </div>
+                <div class="p_picture">
+                    <img src="shamraiz.jpg" alt="picture" loading="lazy">
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="footer-content">
+                <div><p>email</p></div>
+                <div><p>name</p></div>               
+            </div>
+
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script> 
+        var type = new Typed(".chnge_text",{
+            strings:["web developer", "ui desing","student"],
+            typeSpeed: 100,
+            backSpeed:100,
+            loop:true
+        })
+        var type = new Typed(".change_blink",{
+            strings:["_", "_","_"],
+            typeSpeed: 100,
+            backSpeed:100,
+            loop:true
+        })
+        </script>
+    </body>
+</html>
