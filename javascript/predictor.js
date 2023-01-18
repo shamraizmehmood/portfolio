@@ -1,5 +1,5 @@
 function historicData() {
-    fetch("forcaster.json")
+    fetch("../javascript/forcaster.json")
         .then(res => res.json())
         .then(data => {
             let ArrayOfMonth = [];
@@ -69,7 +69,7 @@ function updateData() {
     document.getElementById('graphContainer').style.display = '';
     document.getElementById('graphContainer2').style.display = 'none';
 
-    fetch("forcaster.json")
+    fetch("../javascript/forcaster.json")
         .then(res => res.json())
         .then(data => {
 
@@ -147,7 +147,7 @@ function prediction() {
     document.getElementById('graphContainer2').style.display = '';
     document.getElementById('graphContainer').style.display = 'none';
 
-    fetch("forcaster.json")
+    fetch("../javascript/forcaster.json")
         .then(res => res.json())
         .then(data => {
             let temp = 0
@@ -219,15 +219,3 @@ function prediction() {
             });
         });
 }
-
-// function manipulation(max, min, arr) {
-//     let final = [];
-//     let percentage = Math.round((max - min) / max) * 100 / 100;
-//     let percent = (percentage * max);
-//     for (let a in arr) {
-//         addion = (parseFloat(percent) + parseFloat(arr[a])).toFixed(1);
-//         final.push(parseFloat(addition));
-//         console.lo
-//     }
-//     return final
-// }
