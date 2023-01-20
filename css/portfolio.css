@@ -42,9 +42,59 @@ body {
   font-family: sans-serif;
   font-weight: 700;
 }
+.p-footer {
+  color: black !important;
+}
+
 .footer {
   width: 100%;
   background-color: orange;
-  color: black;
+
   text-align: right;
+}
+
+@media (max-width: 1200px) {
+  .navbar a {
+    margin-right: 50px;
+  }
+}
+@media (max-width: 991px) {
+  .footer-content p {
+    font-size: 16px;
+  }
+  .navbar a {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar a {
+    margin-right: 3px;
+  }
+}
+
+@media (max-width: 640px) {
+  .navbar a {
+    padding: 17px 14px;
+    font-size: 16px;
+    margin-right: 0;
+  }
+}
+@media (max-width: 540px) {
+  .navbar a {
+    padding: 17px 14px;
+    font-size: 15px;
+  }
+  .footer-content p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 480px) {
+  .navbar a {
+    padding: 15px 7px;
+    font-size: 14px;
+  }
+  .footer-content p {
+    font-size: 12px;
+  }
 }

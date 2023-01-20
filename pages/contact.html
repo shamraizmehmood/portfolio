@@ -1,49 +1,77 @@
 <!DOCTYPE html>
-<htm>
-    <head>
-        <link rel="stylesheet" href="../css/contact.css">
-        <link rel="stylesheet" href="../css/portfolio.css">
-        <title>shamraiz Mehmood</title>
-        <link rel="shortcut icon" type="image/jpg" href="../favicon.ico"/>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/portfolio.css" />
+    <link rel="stylesheet" href="../css/contact.css" />
 
-    </head>
+    <link rel="shortcut icon" type="image/jpg" href="../favicon.ico" />
+    <title>shamraiz Mehmood</title>
+  </head>
+  <body>
     <body>
-        <header class="menuBar">
-            <div class="navbar">
-                <a href="portfolio.html">Home</a>
-                <a href="skills.html">Skill</a>
-                <a href="contact.html">Contact</a>
-                <a href="education.html">Education</a>
-                <a href="project.html">Projects</a>
-                <a href="#contact">Contact</a>
+      <header class="menuBar">
+        <div class="navbar">
+          <a href="../portfolio.html">Home</a>
+          <a href="../pages/skills.html">Skill</a>
+          <a href="../pages/contact.html">Contact</a>
+          <a href="../pages/education.html">Education</a>
+          <a href="../pages/project.html">Projects</a>
+          <a href="../pages/testimonial.html">testimonial</a>
+        </div>
+      </header>
+      <section>
+        <div><h1 class="contact-me">Contact Me</h1></div>
+        <div class="container">
+          <form>
+            <label for="fname">First Name</label>
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Your name.."
+              required
+            />
+            <br />
+            <label for="lname">Last Name</label>
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Your last name.."
+              required
+            />
+            <br />
+            <label for="country">Email</label>
+            <input
+              type="email"
+              id="lname"
+              name="lastname"
+              placeholder="Your last email.."
+              required
+            />
+            <br />
+            <label for="subject">Subject</label>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Write something.."
+              style="height: 200px"
+              required
+            ></textarea>
 
-              </div>
-        </header>
-        <section>
-            <div class="container">
-                <form>
-                  <label for="fname">First Name</label>
-                  <input type="text" id="fname" name="firstname" placeholder="Your name.."  required>
-                  <br>
-                  <label for="lname">Last Name</label>
-                  <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
-                  <br>
-                  <label for="country">Email</label>
-                  <input type="email" id="lname" name="lastname" placeholder="Your last email.." required>
-                  <br>
-                  <label for="subject">Subject</label>
-                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"  required></textarea>
-                  
-                  <input type="submit" value="Submit">
-                </form>
-              </div>
-        </section>
-        <footer class="footer">
-            <div class="footer-content">
-                <div><p>email</p></div>
-                <div><p>name</p></div>               
-            </div>
-
-        </footer>
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer-content">
+          <div><p class="p-footer">Shmraizmahmood@gmail.com</p></div>
+          <div><p class="p-footer">Shamraiz Mahmood</p></div>
+        </div>
+      </footer>
     </body>
-</htm>
+  </body>
+</html>

@@ -27,6 +27,7 @@ body {
 .my-skills {
   width: 100%;
   margin-top: 80px;
+  margin-bottom: 50px;
 }
 
 .main {
@@ -40,6 +41,9 @@ body {
   display: flex;
   justify-content: space-between;
   margin-bottom: 13px;
+}
+.footer-content {
+  padding: 15px 0;
 }
 .title h3 {
   font-size: 25px;
@@ -78,4 +82,18 @@ body {
   height: 11px;
   background: #34495e;
   transform: rotate(45deg) translateX(-60%);
+}
+
+@media (max-width: 768px) {
+  h3 {
+    font-size: 20px !important;
+  }
+  .my-skill-heading h1 {
+    font-size: 32px;
+  }
+  .my-skills {
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 42px;
+  }
 }

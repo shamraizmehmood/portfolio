@@ -7,9 +7,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Arvo", serif;
-}
-
-body {
   background: black;
 }
 
@@ -47,8 +44,6 @@ p {
 }
 
 .rectangle {
-  width: 40%;
-  height: 100vh;
   background: black;
 
   position: absolute;
@@ -130,5 +125,13 @@ p {
 
 /* add bg color to the active dot/circle */
 .active {
+  background-color: orange;
+}
+
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+}
+footer {
   background-color: orange;
 }
