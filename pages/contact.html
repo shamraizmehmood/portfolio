@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/portfolio.css" />
     <link rel="stylesheet" href="../css/contact.css" />
+    <script src="../javascript/contact.js"></script>
 
     <link rel="shortcut icon" type="image/jpg" href="../favicon.ico" />
     <title>shamraiz Mehmood</title>
   </head>
-  <body>
     <body>
       <header class="menuBar">
         <div class="navbar">
@@ -54,14 +54,18 @@
             />
             <br />
             <label for="subject">Subject</label>
-            <textarea
+            <textarea onkeyup="checkCount()"
               id="subject"
               name="subject"
               placeholder="Write something.."
               style="height: 200px"
               required
             ></textarea>
-
+            <br>
+            <div>
+             <span id="count">0</span> of 500
+            </div>
+            <br>
             <input type="submit" value="Submit" />
           </form>
         </div>
@@ -73,5 +77,4 @@
         </div>
       </footer>
     </body>
-  </body>
 </html>
