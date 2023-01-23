@@ -34,3 +34,9 @@ a {
   padding-top: 1rem;
   list-style: circle;
 }
+.contact-me {
+  font-size: 40px;
+  color: orange;
+  text-align: center;
+  margin-top: 81px;
+}
