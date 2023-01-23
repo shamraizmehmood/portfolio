@@ -1,4 +1,4 @@
-const api_url = 'http://www.floatrates.com/daily/usd.json'; // link the json data from api
+const api_url = 'https://www.floatrates.com/daily/usd.json'; // link the json data from api
 let total_amount = rate = totals =value= value_second= 0;
 let Source_currency =Destination_Currency=Current_Exchange_Rate=Calculation_Timestamp =Amount_of_transaction ="";
 let source_c= destination_c = currency_code =val_first=val_second= "";
